@@ -1,0 +1,48 @@
+[4m[34mpackages\xf\src\index.ts:1:1[39m[24m - [31m[1merror[22m[39m [90mTS1128[39m: Declaration or statement expected.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mexport[39m xf from [32m'./lib/xf'[39m[33m;[39m[0m
+[0m [90m   | [39m[31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+
+[4m[34mpackages\xf\src\index.ts:1:8[39m[24m - [31m[1merror[22m[39m [90mTS1434[39m: Unexpected keyword or identifier.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mexport[39m xf from [32m'./lib/xf'[39m[33m;[39m[0m
+[0m [90m   | [39m       [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+
+[4m[34mpackages\xf\src\index.ts:1:8[39m[24m - [31m[1merror[22m[39m [90mTS2304[39m: Cannot find name 'xf'.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mexport[39m xf from [32m'./lib/xf'[39m[33m;[39m[0m
+[0m [90m   | [39m       [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+
+[4m[34mpackages\xf\src\index.ts:1:11[39m[24m - [31m[1merror[22m[39m [90mTS1434[39m: Unexpected keyword or identifier.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mexport[39m xf from [32m'./lib/xf'[39m[33m;[39m[0m
+[0m [90m   | [39m          [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+
+[4m[34mpackages\xf\src\index.ts:1:11[39m[24m - [31m[1merror[22m[39m [90mTS2304[39m: Cannot find name 'from'.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mexport[39m xf from [32m'./lib/xf'[39m[33m;[39m[0m
+[0m [90m   | [39m          [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+
+[4m[34mpackages\xf\src\index.ts:4:18[39m[24m - [31m[1merror[22m[39m [90mTS2304[39m: Cannot find name 'xf'.
+
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39mmodule[33m.[39mexports [33m=[39m xf[33m;[39m[0m
+[0m [90m   | [39m                 [31m[1m^[22m[39m[0m
+
+Found 6 errors.

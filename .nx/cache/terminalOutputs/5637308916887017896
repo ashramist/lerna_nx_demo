@@ -1,0 +1,4 @@
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mCannot find project 'core'[39m
+
+Warning: run-commands command "nx run core:build-base" exited with non-zero status code

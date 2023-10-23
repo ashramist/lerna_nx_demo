@@ -1,0 +1,22 @@
+{
+  "name": "@xf/core",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": {
+    "xf": "bin/cli.js"
+  },
+  "description": "> TODO: description",
+  "author": "= <hanasakigirl@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://10.18.1.89:4873/"
+  }
+}
