@@ -1,6 +1,0 @@
-
- [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mBuild failed with 1 error:[39m
-
-   packages/xf/bin/cli.ts:5:8: ERROR: Could not resolve "../index"
-   Pass --verbose to see the stacktrace.
-
