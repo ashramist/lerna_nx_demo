@@ -63,7 +63,7 @@ class Initialzer {
   // 检查是否是最新版本
   checkIsLatest() {
     const command = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-    const subProcess = spawn(command, ['view', 'jquery', 'version']);
+    const subProcess = spawn(command, ['view', pkg.name, 'version']);
     subProcess.stdout.on('data', (data) => {
       const version = Buffer.from(data).toString('utf-8');
       if (semver.lt(pkg.version, version)) {
