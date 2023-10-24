@@ -3,9 +3,11 @@ import { spawn } from 'node:child_process';
 import path from 'node:path';
 import semver from 'semver';
 import { config } from 'dotenv';
-import log from 'npmlog';
 import minimist from 'minimist';
+import colors from 'colors';
+import log from '@xf/utils';
 import pkg from '../package.json';
+
 module.exports = function (argv: string[]) {
   return new Initialzer(argv);
 };
@@ -13,11 +15,11 @@ module.exports = function (argv: string[]) {
 // 准备阶段处理
 class Initialzer {
   constructor(argv: string[]) {
+    this.checkUserInput(argv);
     this.checkPkgVersion();
     this.checkNodeVersion();
     this.checkUserHome();
     this.checkEnv();
-    this.checkUserInput(argv);
     this.checkIsLatest();
   }
   // 版本版本号
@@ -27,27 +29,19 @@ class Initialzer {
   //  node版本检查
   checkNodeVersion() {
     const version: string = process.version;
-    log.info('node', version);
+    if (!semver.satisfies(version, pkg.engines.node)) {
+      throw new Error(
+        colors.red(`您当前node版本过低,支持范围为${pkg.engines.node}`)
+      );
+    }
   }
 
   // 检查用户主目录
   checkUserHome() {
     console.log(homedir());
   }
-  // 检查用户入参
-  checkUserInput(argv: string[]) {
-    const inputParams = minimist(argv);
-    console.log(inputParams);
-    // if (inputParams.debug) {
-    //   log.LOG_LEVEL = 'verbose';
-    // } else {
-    //   log.LOG_LEVEL = 'info';
-    // }
-  }
-
   // 检查环境变量
   checkEnv() {
-    console.log(path.resolve(__dirname, '../core/.env'));
     const envConfig = config({
       path: path.resolve(__dirname, '../core/.env'),
       encoding: 'utf8', // 编码方式，默认utf8
@@ -58,6 +52,16 @@ class Initialzer {
     } else {
       console.log(envConfig);
     }
+  }
+  // 检查用户入参
+  checkUserInput(argv: string[]) {
+    const inputParams = minimist(argv);
+    if (inputParams.debug) {
+      process.env.LOG_LEVEL = 'verbose';
+    } else {
+      process.env.LOG_LEVEL = 'info';
+    }
+    log.level = process.env.LOG_LEVEL;
   }
 
   // 检查是否是最新版本
