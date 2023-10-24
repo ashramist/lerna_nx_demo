@@ -1,0 +1,697 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.1",
+  "deps": {
+    "tslib": "^2.3.0",
+    "@nx/esbuild": "^17.0.1",
+    "@nx/eslint": "17.0.1",
+    "@nx/eslint-plugin": "17.0.1",
+    "@nx/jest": "17.0.1",
+    "@nx/js": "17.0.1",
+    "@nx/node": "^17.0.1",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@types/jest": "^29.4.0",
+    "@types/node": "~18.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "esbuild": "^0.19.2",
+    "eslint": "~8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "jest": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "lerna": "^7.4.1",
+    "nx": "17.0.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.1.3"
+  },
+  "pathMappings": {
+    "@xf/utils": [
+      "packages/utils/src/index.ts"
+    ],
+    "@xf/core": [
+      "packages/core/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "8587836968507943632"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/outputs/dist/packages/xf/bin/index.js",
+        "hash": "12814331734073156110"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/outputs/dist/packages/xf/bin/package.json",
+        "hash": "1069216497644128823"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/outputs/dist/packages/xf/index.js",
+        "hash": "11223351843719352442"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/outputs/dist/packages/xf/package.json",
+        "hash": "1069216497644128823"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/outputs/dist/packages/xf/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764/terminalOutput",
+        "hash": "14590156934892485307"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/10362454758524034764.tar.gz",
+        "hash": "14189446714593976220"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/outputs/dist/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/outputs/dist/packages/xf/bin/cli.js",
+        "hash": "3845911443648869407"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/outputs/dist/packages/xf/index.js",
+        "hash": "880161380771971228"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/outputs/dist/packages/xf/package.json",
+        "hash": "931878309738013909"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322/terminalOutput",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/12309062721989623322.tar.gz",
+        "hash": "14188830823773445955"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/outputs/dist/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/outputs/dist/packages/xf/bin/cli.js",
+        "hash": "2221358202732016742"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/outputs/dist/packages/xf/index.js",
+        "hash": "11223351843719352442"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/outputs/dist/packages/xf/package.json",
+        "hash": "1069216497644128823"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539/terminalOutput",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/13787269958633065539.tar.gz",
+        "hash": "2461111250860448543"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/outputs/dist/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/outputs/dist/packages/xf/bin/cli.js",
+        "hash": "3845911443648869407"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/outputs/dist/packages/xf/index.js",
+        "hash": "11960202031301079257"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/outputs/dist/packages/xf/package.json",
+        "hash": "931878309738013909"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834/terminalOutput",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/15157711850071514834.tar.gz",
+        "hash": "9564360003195582143"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/outputs/dist/packages/xf/index.js",
+        "hash": "11223351843719352442"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/outputs/dist/packages/xf/package.json",
+        "hash": "1069216497644128823"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/outputs/dist/packages/xf/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/outputs/dist/packages/xf/packages/xf/bin/cli.js/packages/xf/src/cli.js",
+        "hash": "2221358202732016742"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298/terminalOutput",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/2723415554440131298.tar.gz",
+        "hash": "129839637102436163"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/outputs/dist/packages/xf/bin/src/cli.js",
+        "hash": "2221358202732016742"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/outputs/dist/packages/xf/index.js",
+        "hash": "11223351843719352442"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/outputs/dist/packages/xf/package.json",
+        "hash": "1069216497644128823"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/outputs/dist/packages/xf/src/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/source",
+        "hash": "15207905016060816869"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315/terminalOutput",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/6068068103762981315.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/cloud/2310.19.6/index.js",
+        "hash": "15048939128412700699"
+      },
+      {
+        "file": ".nx/cache/cloud/2310.19.6/lib/daemon/process-run-end.js",
+        "hash": "17488724639353388161"
+      },
+      {
+        "file": ".nx/cache/cloud/verify.lock",
+        "hash": "116387442755632869"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "17148963401922565840"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "14595700610754782613"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "5218459379853448226"
+      },
+      {
+        "file": ".nx/cache/file-map.json~9b79dc48",
+        "hash": "5001601434673335098"
+      },
+      {
+        "file": ".nx/cache/file-map.json~ec0c9e46",
+        "hash": "11859247987226477512"
+      },
+      {
+        "file": ".nx/cache/file-map.json~f442841e",
+        "hash": "2537935636802781116"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "108648570025497081"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/project-graph.html",
+        "hash": "17036869540637447991"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt",
+        "hash": "12697586560952242144"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/environment.js",
+        "hash": "17381851680094318854"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/main.js",
+        "hash": "7728609541428413042"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/polyfills.js",
+        "hash": "13485831370010545069"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/runtime.js",
+        "hash": "8062122689220335238"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.css",
+        "hash": "5562174198026097626"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.js",
+        "hash": "6967509609777074983"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "8693694211929139609"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~4d550ac3",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~8066d6db",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~8855b51d",
+        "hash": "4974197082236806851"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~8868b011",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~bc2e883d",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~c024668d",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~e995f020",
+        "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~f2210931",
+        "hash": "4974197082236806851"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "7529767130925009012"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/10261658883815451404",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/10362454758524034764",
+        "hash": "14590156934892485307"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/11111865710621901387",
+        "hash": "15067086880573117107"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/1207072369526226839",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/12309062721989623322",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/1303323187210655729",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/1358081998872667475",
+        "hash": "13685028492865369452"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/13787269958633065539",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/14020820620888954442",
+        "hash": "5347151157181383225"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/15157711850071514834",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/15960074079583260171",
+        "hash": "15419213733717658631"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/16000599539351702638",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/16148210430798832402",
+        "hash": "5347151157181383225"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2599752037545195027",
+        "hash": "12351652414058222695"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2723415554440131298",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/4578970645661063360",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/568122515662612784",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/6068068103762981315",
+        "hash": "1630726942053298635"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/627981579915402101",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/7442224133463576866",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/801625482123642465",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/8898913473818856295",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/9624187314776213432",
+        "hash": "4394400418800944421"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "dist/packages/xf/README.md",
+        "hash": "14883774313026451737"
+      },
+      {
+        "file": "dist/packages/xf/bin/cli.js",
+        "hash": "1271609083989105237"
+      },
+      {
+        "file": "dist/packages/xf/index.js",
+        "hash": "880161380771971228"
+      },
+      {
+        "file": "dist/packages/xf/package.json",
+        "hash": "931878309738013909"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "5332971799444941519"
+      },
+      {
+        "file": "nx.json",
+        "hash": "16551294991474344892"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5826731577683999760"
+      },
+      {
+        "file": "package.json",
+        "hash": "5309446401707925502"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16475186560742503290"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/13073278355349673080",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "dist/packages/core/package.json",
+        "hash": "4436978679785907674"
+      },
+      {
+        "file": "dist/packages/core/README.md",
+        "hash": "16894354538507244311"
+      },
+      {
+        "file": "dist/packages/core/bin/cli.js",
+        "hash": "12403588821867727192"
+      },
+      {
+        "file": "dist/packages/core/index.js",
+        "hash": "2689396802894006292"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/5637308916887017896",
+        "hash": "14635747643531659800"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~6dec2c53",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~6c575859",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/file-map.json~2875173d",
+        "hash": "13963760450520603019"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~4bf53894",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~bcf5e901",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/file-map.json~559b97f4",
+        "hash": "2812788757710930856"
+      },
+      {
+        "file": ".nx/cache/file-map.json~6121f18a",
+        "hash": "10206218883121220678"
+      },
+      {
+        "file": "lerna_nx_demo.zip",
+        "hash": "149549246623886100"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a6691a63",
+        "hash": "15032454838335777973"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a98c6d32",
+        "hash": "16655853515751314177"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a560999c",
+        "hash": "11423214083566339326"
+      }
+    ],
+    "projectFileMap": {
+      "@xf/utils": [
+        {
+          "file": "packages/utils/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "packages/utils/README.md",
+          "hash": "11412078281620664685"
+        },
+        {
+          "file": "packages/utils/__tests__/utils.test.js",
+          "hash": "14453996436464896720",
+          "deps": [
+            "npm:assert"
+          ]
+        },
+        {
+          "file": "packages/utils/jest.config.ts",
+          "hash": "11286618245911598244"
+        },
+        {
+          "file": "packages/utils/lib/utils.js",
+          "hash": "13392667972890501296"
+        },
+        {
+          "file": "packages/utils/package.json",
+          "hash": "1239920298790993467"
+        },
+        {
+          "file": "packages/utils/project.json",
+          "hash": "3491140304991606105"
+        },
+        {
+          "file": "packages/utils/src/index.ts",
+          "hash": "5679720557803443103"
+        },
+        {
+          "file": "packages/utils/src/lib/utils.spec.ts",
+          "hash": "1869297507391227175"
+        },
+        {
+          "file": "packages/utils/src/lib/utils.ts",
+          "hash": "17287710670217841263"
+        },
+        {
+          "file": "packages/utils/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "packages/utils/tsconfig.lib.json",
+          "hash": "8188472110264778699"
+        },
+        {
+          "file": "packages/utils/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        }
+      ],
+      "@xf/core": [
+        {
+          "file": "packages/core/.eslintrc.json",
+          "hash": "16896711999632553762"
+        },
+        {
+          "file": "packages/core/README.md",
+          "hash": "16894354538507244311"
+        },
+        {
+          "file": "packages/core/jest.config.ts",
+          "hash": "16360130956188905312"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "4436978679785907674"
+        },
+        {
+          "file": "packages/core/project.json",
+          "hash": "14551590735330210240"
+        },
+        {
+          "file": "packages/core/src/cli.js",
+          "hash": "12403588821867727192"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "9492361855573897495"
+        },
+        {
+          "file": "packages/core/src/lib/core.spec.ts",
+          "hash": "14739241555698081179"
+        },
+        {
+          "file": "packages/core/src/lib/core.ts",
+          "hash": "14885622587354129707"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "2840670722752396445"
+        },
+        {
+          "file": "packages/core/tsconfig.lib.json",
+          "hash": "8188472110264778699"
+        },
+        {
+          "file": "packages/core/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        }
+      ]
+    }
+  }
+}

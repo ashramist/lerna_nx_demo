@@ -265,19 +265,51 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "11315405319302175682"
+        "hash": "12367943987644366842"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "14595700610754782613"
+        "hash": "11532960319535362281"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "17298545153786011239"
+        "hash": "9456573714268197297"
+      },
+      {
+        "file": ".nx/cache/file-map.json~2875173d",
+        "hash": "13963760450520603019"
+      },
+      {
+        "file": ".nx/cache/file-map.json~559b97f4",
+        "hash": "2812788757710930856"
+      },
+      {
+        "file": ".nx/cache/file-map.json~6121f18a",
+        "hash": "10206218883121220678"
       },
       {
         "file": ".nx/cache/file-map.json~9b79dc48",
         "hash": "5001601434673335098"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a560999c",
+        "hash": "11423214083566339326"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a6691a63",
+        "hash": "15032454838335777973"
+      },
+      {
+        "file": ".nx/cache/file-map.json~a98c6d32",
+        "hash": "16655853515751314177"
+      },
+      {
+        "file": ".nx/cache/file-map.json~b5ab7f0c",
+        "hash": "5421776214742335661"
+      },
+      {
+        "file": ".nx/cache/file-map.json~d2488471",
+        "hash": "11225579563738669371"
       },
       {
         "file": ".nx/cache/file-map.json~ec0c9e46",
@@ -333,11 +365,23 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
+        "hash": "9819524713674360612"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~4bf53894",
         "hash": "1889282011791083229"
       },
       {
         "file": ".nx/cache/project-graph.json~4d550ac3",
         "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~6c575859",
+        "hash": "1889282011791083229"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~6dec2c53",
+        "hash": "1889282011791083229"
       },
       {
         "file": ".nx/cache/project-graph.json~8066d6db",
@@ -354,6 +398,10 @@
       {
         "file": ".nx/cache/project-graph.json~bc2e883d",
         "hash": "14124647512166785551"
+      },
+      {
+        "file": ".nx/cache/project-graph.json~bcf5e901",
+        "hash": "1889282011791083229"
       },
       {
         "file": ".nx/cache/project-graph.json~c024668d",
@@ -393,6 +441,10 @@
       },
       {
         "file": ".nx/cache/terminalOutputs/1303323187210655729",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/13073278355349673080",
         "hash": "3244421341483603138"
       },
       {
@@ -436,6 +488,10 @@
         "hash": "3244421341483603138"
       },
       {
+        "file": ".nx/cache/terminalOutputs/5637308916887017896",
+        "hash": "14635747643531659800"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/568122515662612784",
         "hash": "3244421341483603138"
       },
@@ -472,6 +528,22 @@
         "hash": "16267754514737964994"
       },
       {
+        "file": "dist/packages/core/README.md",
+        "hash": "16894354538507244311"
+      },
+      {
+        "file": "dist/packages/core/bin/cli.js",
+        "hash": "12403588821867727192"
+      },
+      {
+        "file": "dist/packages/core/index.js",
+        "hash": "2689396802894006292"
+      },
+      {
+        "file": "dist/packages/core/package.json",
+        "hash": "4436978679785907674"
+      },
+      {
         "file": "dist/packages/xf/README.md",
         "hash": "14883774313026451737"
       },
@@ -496,10 +568,6 @@
         "hash": "9430166341120122740"
       },
       {
-        "file": "lerna-nx_demo.zip",
-        "hash": "14481982790125341273"
-      },
-      {
         "file": "lerna.json",
         "hash": "5332971799444941519"
       },
@@ -520,28 +588,28 @@
         "hash": "16475186560742503290"
       },
       {
-        "file": ".nx/cache/terminalOutputs/13073278355349673080",
-        "hash": "3244421341483603138"
+        "file": ".nx/cache/file-map.json~41b34707",
+        "hash": "14831727823461706733"
       },
       {
-        "file": "dist/packages/core/package.json",
-        "hash": "4436978679785907674"
+        "file": ".nx/cache/file-map.json~2676386b",
+        "hash": "16477895852148025300"
       },
       {
-        "file": "dist/packages/core/README.md",
-        "hash": "16894354538507244311"
+        "file": ".nx/cache/project-graph.json~5620d791",
+        "hash": "9819524713674360612"
       },
       {
-        "file": "dist/packages/core/bin/cli.js",
-        "hash": "12403588821867727192"
+        "file": ".nx/cache/project-graph.json~284a76ca",
+        "hash": "9819524713674360612"
       },
       {
-        "file": "dist/packages/core/index.js",
-        "hash": "2689396802894006292"
+        "file": ".nx/cache/project-graph.json~15f4012e",
+        "hash": "9819524713674360612"
       },
       {
-        "file": ".nx/cache/terminalOutputs/5637308916887017896",
-        "hash": "14635747643531659800"
+        "file": ".nx/cache/project-graph.json~9fdae467",
+        "hash": "9819524713674360612"
       }
     ],
     "projectFileMap": {
