@@ -22,6 +22,11 @@
             "output": "."
           },
           {
+            "glob": "*.env",
+            "input": "packages/core",
+            "output": "."
+          },
+          {
             "glob": "cli.js",
             "input": "packages/core/src",
             "output": "./bin"
@@ -57,7 +62,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "nx run core:build-base"
+          "nx run @xf/core:build-base"
         ]
       }
     },

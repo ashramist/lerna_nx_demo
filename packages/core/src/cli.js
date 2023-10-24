@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-console.log('这是一个脚手架工程');
+const importLocal = require('import-local');
 
-console.log(require('..')());
+if (importLocal(__dirname)) {
+  require('npmlog').info('xf', '当前使用本地库');
+} else {
+  require('..')(process.argv.slice(2));
+}

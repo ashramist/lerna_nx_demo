@@ -18,5 +18,13 @@
   ],
   "publishConfig": {
     "registry": "http://10.18.1.89:4873/"
+  },
+  "devDependencies": {
+    "@types/npmlog": "^4.1.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "minimist": "^1.2.8",
+    "semver": "^7.5.4"
   }
 }
