@@ -24,23 +24,25 @@ clone
 
 // add command 注册子命令
 
-const service = new Command('service')
-  .command('start <service>', '开启一个具名服务')
-  .action((service) => {
-    console.log(`${service}已被开启`);
+function buildServiceCommand() {
+  const service = new Command('service');
+  service.command('start <name>', '开启一个具名服务').action((name) => {
+    console.log(`${name}已被开启`);
   });
-service
-  .command('stop [service]', '关闭一个具名服务或者关闭所有服务')
-  .action((service) => {
-    if (service) {
-      console.log(`${service}已被关闭`);
-    } else {
-      console.log('所有服务都终止了');
-    }
-  });
+  service
+    .command('stop [name]', '关闭一个具名服务或者关闭所有服务')
+    .action((name) => {
+      if (name) {
+        console.log(`${name}已被关闭`);
+      } else {
+        console.log('所有服务都终止了');
+      }
+    });
+  return service;
+}
 
 // 添加子命令
-program.addCommand(service);
+program.addCommand(buildServiceCommand());
 
 // <>代表必传，[] 代表可选参数
 // program
