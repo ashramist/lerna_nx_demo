@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: '@xf/utils',
+  displayName: '@wawj/utils',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

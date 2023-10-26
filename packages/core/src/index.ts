@@ -5,9 +5,11 @@ import semver from 'semver';
 import { config } from 'dotenv';
 import minimist from 'minimist';
 import colors from 'colors';
-import log from '@xf/utils';
+import log from '@wawj/utils';
+import { Command } from 'commander';
 import pkg from '../package.json';
 
+const program = new Command();
 module.exports = function (argv: string[]) {
   return new Initialzer(argv);
 };
@@ -15,12 +17,17 @@ module.exports = function (argv: string[]) {
 // 准备阶段处理
 class Initialzer {
   constructor(argv: string[]) {
-    this.checkUserInput(argv);
-    this.checkPkgVersion();
-    this.checkNodeVersion();
-    this.checkUserHome();
-    this.checkEnv();
-    this.checkIsLatest();
+    try {
+      this.checkUserInput(argv);
+      this.checkPkgVersion();
+      this.checkNodeVersion();
+      this.checkUserHome();
+      this.checkEnv();
+      // this.checkIsLatest();
+      this.registerCommands();
+    } catch (err) {
+      console.log(err);
+    }
   }
   // 版本版本号
   checkPkgVersion() {
@@ -71,7 +78,14 @@ class Initialzer {
     subProcess.stdout.on('data', (data) => {
       const version = Buffer.from(data).toString('utf-8');
       if (semver.lt(pkg.version, version)) {
-        log.warn('warn', `当前版本过低，最新版本为${data}`);
+        log.warn(
+          colors.yellow(`请手动更新npm包 ${pkg.name}`),
+          `当前版本:${pkg.version}`,
+          `最新版本:${colors.yellow(version)}${colors.red(
+            `更新命令:npm install ${pkg.name}@latest`
+          )}
+          `
+        );
       }
     });
     subProcess.stderr.on('data', (data) => {
@@ -81,5 +95,16 @@ class Initialzer {
     subProcess.on('close', (code) => {
       log.info('std close', `子进程退出码：${code}`);
     });
+  }
+  // 注册命令
+  registerCommands() {
+    program
+      .name(Object.keys(pkg.bin)[0]) // 定义模板名称
+      .version(pkg.version)
+      .option('-d,--debug', '开启调试模式')
+      .option('-h,--help', '帮助');
+
+    program.parse(process.argv);
+    program.outputHelp();
   }
 }

@@ -1,11 +1,11 @@
-# `@xf/utils`
+# `@wawj/utils`
 
 > TODO: description
 
 ## Usage
 
 ```
-const utils = require('@xf/utils');
+const utils = require('@wawj/utils');
 
 // TODO: DEMONSTRATE API
 ```

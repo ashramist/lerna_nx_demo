@@ -20,10 +20,10 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "paths": {
-      "@xf/utils": [
+      "@wawj/utils": [
         "packages/utils/src/index.ts"
       ],
-      "@xf/core": [
+      "@wawj/core": [
         "packages/core/src/index.ts"
       ]
     }

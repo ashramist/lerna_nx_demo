@@ -35,6 +35,8 @@
     "typescript": "~5.1.3"
   },
   "dependencies": {
+    "@wawj/core": "^0.0.1",
+    "commander": "^11.1.0",
     "tslib": "^2.3.0"
   },
   "engines": {

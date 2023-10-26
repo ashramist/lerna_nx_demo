@@ -1,5 +1,5 @@
 {
-  "name": "@xf/utils",
+  "name": "@wawj/utils",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/utils/src",
   "projectType": "library",
