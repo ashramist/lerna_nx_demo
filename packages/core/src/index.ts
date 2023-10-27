@@ -18,20 +18,20 @@ module.exports = function (argv: string[]) {
 class Initialzer {
   constructor(argv: string[]) {
     try {
-      this.checkUserInput(argv);
+      this.registerCommands();
+      // this.checkUserInput(argv);
       this.checkPkgVersion();
       this.checkNodeVersion();
       this.checkUserHome();
       this.checkEnv();
       // this.checkIsLatest();
-      this.registerCommands();
     } catch (err) {
       console.log(err);
     }
   }
   // 版本版本号
   checkPkgVersion() {
-    log.info('cli', pkg.version);
+    log.log(process.env.LOG_LEVEL, 'cli', pkg.version);
   }
   //  node版本检查
   checkNodeVersion() {
@@ -60,16 +60,16 @@ class Initialzer {
       console.log(envConfig);
     }
   }
-  // 检查用户入参
-  checkUserInput(argv: string[]) {
-    const inputParams = minimist(argv);
-    if (inputParams.debug) {
-      process.env.LOG_LEVEL = 'verbose';
-    } else {
-      process.env.LOG_LEVEL = 'info';
-    }
-    log.level = process.env.LOG_LEVEL;
-  }
+  // // 检查用户入参
+  // checkUserInput(argv: string[]) {
+  //   const inputParams = minimist(argv);
+  //   if (inputParams.debug) {
+  //     process.env.LOG_LEVEL = 'verbose';
+  //   } else {
+  //     process.env.LOG_LEVEL = 'info';
+  //   }
+  //   log.level = process.env.LOG_LEVEL;
+  // }
 
   // 检查是否是最新版本
   checkIsLatest() {
@@ -93,18 +93,60 @@ class Initialzer {
     });
 
     subProcess.on('close', (code) => {
-      log.info('std close', `子进程退出码：${code}`);
+      log.log(process.env.LOG_LEVEL, 'std close', `子进程退出码：${code}`);
     });
   }
   // 注册命令
   registerCommands() {
     program
       .name(Object.keys(pkg.bin)[0]) // 定义模板名称
+      .usage('<command> [options]')
       .version(pkg.version)
-      .option('-d,--debug', '开启调试模式')
-      .option('-h,--help', '帮助');
+      .option('-d,--debug', '是否开启调试模式', false)
+      .option('-h,--help', '帮助')
+      .showHelpAfterError('(add --help for additional information)');
 
-    program.parse(process.argv);
-    program.outputHelp();
+    program
+      .command('init <projectName>')
+      .description('初始化一个项目')
+      .option('-f,--force', '是否强制初始化项目', false)
+      .action((projectName, options) => {
+        console.log(projectName);
+        console.log(options);
+      });
+    program
+      .command('create <name>')
+      .description('创建一个工程')
+      .action((name, opt) => {
+        console.log(name);
+        console.log(opt);
+      });
+
+    program.action((cmd) => {
+      console.log(`当前输入命令为` + cmd);
+      console.log(program);
+    });
+
+    // 监听是否开启debug 模式
+    program.on('option:debug', function () {
+      process.env.LOG_LEVEL = this.opts().debug ? 'verbose' : 'info';
+      log.level = process.env.LOG_LEVEL;
+      log.verbose('测试', 'test');
+    });
+
+    // program.error('未知命令', { code: 'commander.unknownCommand' });
+    //     program.addHelpText(
+    //       'after',
+    //       `
+    // Examples:
+    //   $ custom-help --help
+    //   $ custom-help -h`
+    //     );
+    //     program.outputHelp();
+    try {
+      program.parse(process.argv);
+    } catch (err) {
+      console.log(err);
+    }
   }
 }

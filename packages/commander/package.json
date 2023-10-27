@@ -7,7 +7,7 @@
     "wawj": "bin/core.mjs"
   },
   "scripts": {
-    "build": "webpack --config ./build/webpack.config.js",
+    // "build": "webpack --config ./build/webpack.config.js",
     "dev": "webpack -w --config ./build/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
